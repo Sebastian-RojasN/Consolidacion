@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+
+    <div class="card col-12 col-md-10 col-lg-10 mx-auto mt-5 rounded-4 shadow-sm">
+        <div class="container card-body p-5">
+            <h5 class="fw-bold fs-2 card-title m-5 d-flex flex-column align-items-center justify-content-center">
+                Presupuesto
+            </h5>
+
+            <!-- Sección de Presupuesto -->
+            <div class="row">
+                <div
+                    class="col-6 d-flex flex-column align-items-start justify-content-start border border-3 rounded-4 p-3 form-group border-success bg-success-subtle">
+                    <label for="presupuesto" class="form-label fw-bold">Presupuesto</label>
+                    <input type="number" class="form-control bg-success-subtle border-success" id="presupuesto"
+                        placeholder="Ingresa tu presupuesto">
+                    <div class="mt-2">
+                        <button class="btn btn-outline-success" id="calcularButton">Calcular</button>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="row pb-2">
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <div>PRESUPUESTO</div>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <div>GASTOS</div>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <div>SALDO</div>
+                        </div>
+                    </div>
+                    <div class="row fw-bold fs-5">
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <div id="valorPresupuesto"> </div>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center" id="sumaGastos">
+                            <div></div>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <div id="valorSaldo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Sección de Presupuesto -->
+
+            <!-- Sección de Gastos -->
+            <div class="row mt-3">
+                <div
+                    class="col-6 d-flex flex-column align-items-start justify-content-start border border-3 rounded-4 p-3 form-group border-danger bg-danger-subtle">
+                    <label for="nombreGasto" class="form-label fw-bold">Nombre</label>
+                    <input type="text" class="form-control bg-danger-subtle border-danger" id="nombreGasto"
+                        placeholder="Ingresa el nombre del gasto" required>
+                    <label for="valorGasto" class="form-label fw-bold mt-2">Valor</label>
+                    <input type="number" class="form-control bg-danger-subtle border-danger" id="valorGasto"
+                        placeholder="Ingresa el valor del gasto" required>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-danger" id="agregarGastoButton">Añadir gasto</button>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="row fw-bold m-0 p-0 border-bottom pb-1">
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-start">
+                            <div>GASTO</div>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <div>VALOR</div>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-end">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row" id="gastos">
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-start">
+                            <p class="m-0"> </p>
+                        </div>
+                        <div class="col-4 col-sm-4 d-flex flex-column align-items-center justify-content-center">
+                            <p class="m-0"> </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Sección de Gastos -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

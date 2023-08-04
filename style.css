@@ -1,0 +1,8 @@
+.custom-card-bg-color{
+    background-color:white;
+}
+
+.bg-color{
+    background: linear-gradient(to right, rgb(0, 102, 255), rgb(0, 204, 255));
+
+}
